@@ -3,3 +3,13 @@
 Titus Winters, Software Engineering at Google
 
 De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projetar e guiar o desenvolvimento de sistemas, além de cuidar da manutenção de um sistema, podem ser desenvolvedores, todavia, desenvolvedores não podem ser engenheiros de software. Visto que os Engenheiros de Software desenvolvem e mantém a plataforma, e os desenvolvedores constroem o programa contido na plataforma.
+
+
+## Oficina
+
+### Requisitos funcionais:
+  - Cadastro dos diferentes tipos de máquinas existente na oficina, inserindo marca, modelo, número de série e o setor; 
+  - Identificação da localidade da máquina, através da marca, modelo, número de série e setor;
+  - Buscar uma máquina a partir de seu número de série;
+
+### Requisitos não-funcionais:
