@@ -14,12 +14,12 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 
 ### Casos de Uso
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/186028012-74b1b0c0-f78b-44ed-9e6a-d5e02d687939.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/108765052/186031237-562f4b12-a85c-4d6a-84e4-3e03be6cc2d9.png" width="650px" />
 </div>
 
 ### Requisitos não-funcionais:
   - Separação de Interesses: Implementar o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade.
   - Portabilidade: executar o sistema em diferentes plataformas
   - Interface de simples acesso
-  
- 
+
+
