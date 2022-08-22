@@ -12,4 +12,14 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
   - Identificação da localidade da máquina, através da marca, modelo, número de série e setor;
   - Buscar uma máquina a partir de seu número de série;
 
+### Casos de Uso
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/186028012-74b1b0c0-f78b-44ed-9e6a-d5e02d687939.png" width="500px" />
+</div>
+
 ### Requisitos não-funcionais:
+  - Separação de Interesses: Implementae o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade.
+  - Portabilidade: executar o sistema em diferentes plataformas
+  - Interface de simples acesso
+  
+ 
