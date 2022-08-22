@@ -18,7 +18,7 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 </div>
 
 ### Requisitos não-funcionais:
-  - Separação de Interesses: Implementae o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade.
+  - Separação de Interesses: Implementar o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade.
   - Portabilidade: executar o sistema em diferentes plataformas
   - Interface de simples acesso
   
