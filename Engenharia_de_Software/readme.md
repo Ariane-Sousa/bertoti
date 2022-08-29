@@ -21,5 +21,11 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
   - Separação de Interesses: Implementar o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade.
   - Portabilidade: executar o sistema em diferentes plataformas
   - Interface de simples acesso
+  
+  ### Diagrama de Classes UML
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/187309434-0eae16c1-5fcd-4ac7-9ad3-07b6d88b4b0e.jpg" width="1250px" />
+</div>
+
 
 
