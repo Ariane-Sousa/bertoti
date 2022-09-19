@@ -5,23 +5,32 @@ Titus Winters, Software Engineering at Google
 De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projetar e guiar o desenvolvimento de sistemas, além de cuidar da manutenção de um sistema, podem ser desenvolvedores, todavia, desenvolvedores não podem ser engenheiros de software. Visto que os Engenheiros de Software desenvolvem e mantém a plataforma, e os desenvolvedores constroem o programa contido na plataforma.
 
 
-## Oficina
+# Ciclo de Vida do Desenvolvimento de Software
 
-### Requisitos funcionais:
-  - Cadastro dos diferentes tipos de máquinas existente na oficina, inserindo marca, modelo, número de série e o setor; 
-  - Identificação da localidade da máquina, através da marca, modelo, número de série e setor;
+## Requisitos
+
+### Funcionais
+  - Cadastro de setores;
+  - Cadastro dos tipos de máquinas da oficina: marca, modelo, número de série e o setor; 
+  - Identificação da localidade da máquina: através da marca, modelo, número de série e setor;
   - Buscar uma máquina a partir de seu número de série;
+  - Mudas status de máquinas e setores, caso estejam em manutenção.
 
 ### Casos de Uso
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/186031237-562f4b12-a85c-4d6a-84e4-3e03be6cc2d9.png" width="650px" />
+<img src="https://user-images.githubusercontent.com/108765052/190936777-575efc5d-2d4f-43b4-adb9-0c83c4680161.jpeg" width="650px" />
 </div>
 
-### Requisitos não-funcionais:
-  - Separação de Interesses: Implementar o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade.
-  - Portabilidade: executar o sistema em diferentes plataformas
-  - Interface de simples acesso
-  
+### User Stories
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/190936809-d89be112-f986-4558-b551-05c1e2d875e2.jpeg" width="650px" />
+</div>
+
+### Não-funcionais:
+  - Separação de Interesses: Implementar o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade;
+  - Acesso em diferentes plataformas;
+  - Interface de simples acesso.
+
 ### Diagrama de Classes UML
 <div align="center">
 <img src="https://user-images.githubusercontent.com/108765052/188245362-9970fcb9-4463-4113-a021-0a8d669d75c5.png" width="1250px" />
