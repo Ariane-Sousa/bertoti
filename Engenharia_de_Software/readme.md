@@ -4,7 +4,6 @@ Titus Winters, Software Engineering at Google
 
 De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projetar e guiar o desenvolvimento de sistemas, além de cuidar da manutenção de um sistema, podem ser desenvolvedores, todavia, desenvolvedores não podem ser engenheiros de software. Visto que os Engenheiros de Software desenvolvem e mantém a plataforma, e os desenvolvedores constroem o programa contido na plataforma.
 
-
 # Ciclo de Vida do Desenvolvimento de Software
 
 ## Requisitos
@@ -33,7 +32,7 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 
 ### Diagrama de Classes UML
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/188245362-9970fcb9-4463-4113-a021-0a8d669d75c5.png" width="1250px" />
+<img src="https://user-images.githubusercontent.com/108765052/191131800-51066630-9845-4846-b2ec-6f37b39e0c87.png" width="1250px" />
 </div>
 
 
