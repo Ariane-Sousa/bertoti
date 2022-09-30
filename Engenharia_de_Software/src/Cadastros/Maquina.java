@@ -4,7 +4,7 @@ public class Maquina {
 	private String codigodecadastro;
 	private Especificacao espec;
 	
-	public Maquina(String codigocadastro, Especificacao espec){
+	public Maquina(String codigocadastro, Especificacao espec,){
 		this.codigodecadastro = codigocadastro;
 		this.espec = espec;
 	}

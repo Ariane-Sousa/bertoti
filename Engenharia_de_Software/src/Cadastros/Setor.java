@@ -3,7 +3,7 @@ package Cadastros;
 public class Setor {
 	private String codigocadastrosetor;
 	
-	public Setor(String codigocadastrosetor) {
+	public Setor(String codigocadastrosetor,) {
 		this.codigocadastrosetor = codigocadastrosetor;
 	}
 

@@ -7,7 +7,7 @@ public class Oficina {
 	private List<Maquina>maquinas = new LinkedList<Maquina>();
 
 	public void cadastrarmaquina(Maquina maquina){
-		maquina.add(maquina);
+		Maquina.add(Maquina);
 	}
 	
 	public List<Maquina> getMaquina() {

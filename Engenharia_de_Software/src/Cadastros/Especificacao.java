@@ -7,7 +7,7 @@ public class Especificacao {
 	private String setor;
 	
 	
-	public Especificacao(String marca, String modelo, String numeroDeSerie, String setor) {
+	public Especificacao(String marca, String modelo, String numeroDeSerie, String setor,) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.numeroDeSerie = numeroDeSerie;
