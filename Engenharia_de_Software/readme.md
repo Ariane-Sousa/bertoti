@@ -32,7 +32,8 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 
 ### Diagrama de Classes UML
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/191131800-51066630-9845-4846-b2ec-6f37b39e0c87.png" width="1250px" />
+<img src="https://user-images.githubusercontent.com/108765052/196983486-58c73303-a8c1-4b9e-8831-430eb3abc3ff.png" width="1250px" />
 </div>
+
 
 
