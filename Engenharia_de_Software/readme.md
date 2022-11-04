@@ -11,18 +11,16 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 ### Funcionais
   - Cadastro de setores;
   - Cadastro dos tipos de máquinas da oficina: marca, modelo, número de série e o setor; 
-  - Identificação da localidade da máquina: através da marca, modelo, número de série e setor;
-  - Buscar uma máquina a partir de seu número de série;
-  - Mudas status de máquinas e setores, caso estejam em manutenção.
+  - Identificação da localidade da máquina: através da marca, modelo, número de série e setor.
 
 ### Casos de Uso
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/190936777-575efc5d-2d4f-43b4-adb9-0c83c4680161.jpeg" width="650px" />
+<img src="https://user-images.githubusercontent.com/108765052/186031237-562f4b12-a85c-4d6a-84e4-3e03be6cc2d9.png" width="1250px" />
 </div>
 
 ### User Stories
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/190936809-d89be112-f986-4558-b551-05c1e2d875e2.jpeg" width="650px" />
+<img src="https://user-images.githubusercontent.com/108765052/200062015-ef6e3676-e88e-4737-9526-ba6d5148a122.jpeg" width="650px" />
 </div>
 
 ### Não-funcionais:
@@ -32,7 +30,7 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 
 ### Diagrama de Classes UML
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/196983486-58c73303-a8c1-4b9e-8831-430eb3abc3ff.png" width="1250px" />
+<img src="https://user-images.githubusercontent.com/108765052/200061796-db0aa1be-ea9e-4e10-b14b-4ef63a0c03ab.jpg" width="1250px" />
 </div>
 
 
