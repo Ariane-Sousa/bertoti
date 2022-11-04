@@ -7,7 +7,7 @@ public class Especificacao {
 	private String setor;
 	
 	
-	public Especificacao(String marca, String modelo, String numeroDeSerie, String setor,) {
+	public Especificacao(String marca, String modelo, String numeroDeSerie, String setor) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.numeroDeSerie = numeroDeSerie;
@@ -45,5 +45,15 @@ public class Especificacao {
 	public void setSetor(String setor) {
 		this.setor = setor;
 	}
+	
+	public boolean comparar(Especificacao especificacao){
+		if(this.marca.equals(especificacao.marca) && this.modelo.equals(especificacao.modelo) 
+				&& this.numeroDeSerie.equals(especificacao.numeroDeSerie)){
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 
 }
