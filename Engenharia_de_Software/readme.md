@@ -38,6 +38,25 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 <img src="https://user-images.githubusercontent.com/108765052/203987038-acec4441-ceb1-450a-b2c4-32f18a6dc6f3.jpeg" width="1250px" />
 </div>
 
+### Códigos
+### Oficina
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/203988358-060f1d0b-3da2-4035-bdbd-0caf5162d022.jpeg" width="1250px" />
+</div>
 
+### Máquina
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/203988440-1781c96d-58c3-42d0-a062-9172204965b2.jpeg" width="1250px" />
+</div>
+
+### Setor
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/203988497-a825ed20-a590-4b4a-8d8e-889a4fc76ccf.jpeg" width="1250px" />
+</div>
+
+### Especificação
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/203988577-fa9ad312-6556-46ef-8523-0f7fabb2d663.jpeg" width="1250px" />
+</div>
 
 
