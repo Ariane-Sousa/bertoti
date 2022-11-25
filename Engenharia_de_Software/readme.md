@@ -11,27 +11,33 @@ De acordo com Titus Winters, os Engenheiros de Software, responsaveis por projet
 ### Funcionais
   - Cadastro de setores;
   - Cadastro dos tipos de máquinas da oficina: marca, modelo, número de série e o setor; 
-  - Identificação da localidade da máquina: através da marca, modelo, número de série e setor.
+  - Identificação da localidade da máquina: através da marca, modelo, número de série e setor;
+  - Identificação da localidade do setor: através da nome.
+  
+### User Stories
+<div align="center">
+<img src="https://user-images.githubusercontent.com/108765052/203986895-7488881b-d5e8-424c-93a4-3f31002958c4.jpeg" width="650px" />
+</div>
 
 ### Casos de Uso
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/186031237-562f4b12-a85c-4d6a-84e4-3e03be6cc2d9.png" width="1250px" />
+<img src="https://user-images.githubusercontent.com/108765052/203987352-df604e40-a1f7-44b5-a61c-a17d0b5fa679.jpeg" width="1250px" />
 </div>
 
-### User Stories
+### Diagrama de sequência
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/200062015-ef6e3676-e88e-4737-9526-ba6d5148a122.jpeg" width="650px" />
+<img src="https://user-images.githubusercontent.com/108765052/203987153-7d42d647-bcc2-45a9-ab9d-07f3274b2926.jpeg" width="1250px" />
 </div>
 
 ### Não-funcionais:
   - Separação de Interesses: Implementar o modelo clássico Apresentação/Negócio/Repositório, o bem conhecido modelo em 3 camadas, onde cada pacote, projeto, assembly tem uma responsabilidade;
   - Acesso em diferentes plataformas;
-  - Interface de simples acesso.
 
 ### Diagrama de Classes UML
 <div align="center">
-<img src="https://user-images.githubusercontent.com/108765052/200061796-db0aa1be-ea9e-4e10-b14b-4ef63a0c03ab.jpg" width="1250px" />
+<img src="https://user-images.githubusercontent.com/108765052/203987038-acec4441-ceb1-450a-b2c4-32f18a6dc6f3.jpeg" width="1250px" />
 </div>
+
 
 
 
