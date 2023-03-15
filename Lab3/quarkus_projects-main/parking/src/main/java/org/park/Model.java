@@ -6,47 +6,47 @@ import java.util.LinkedList;
 
 public class Model {
 	
-	private List<Carro> carros = new LinkedList<Carro>();
+	private List<Album> albuns = new LinkedList<Album>();
 
 	public Model() {
-		addCarro(new Carro("AAA1111", new Especificacao("gol", "vw", "verde")));
+		addAlbum(new Album("5555-22", new Especificacao("I Love You", "The Neighbourhood", "2013")));
 	}
 	
-	public void addCarro(Carro carro){
-		carros.add(carro);
+	public void addAlbum(Album album){
+		albuns.add(album);
 	}
 	
-	public Carro buscarPlaca(String placa){
-		for(Carro carro:carros){
-			if(carro.getPlaca().equals(placa)) return carro;
+	public Album buscarCodigo(String codigo){
+		for(Album album:albuns){
+			if(album.getCodigo().equals(codigo)) return album;
 		}
 		
 		return null;
 	}
 	
 	
-	public List<Carro> buscarEspecificacao(Especificacao esp){
-		List<Carro> carrosEncontrados = new LinkedList<Carro>();
+	public List<Album> buscarEspecificacao(Especificacao esp){
+		List<Album> albunsEncontrados = new LinkedList<Album>();
 		
-		for(Carro carro:carros){
-			 if(esp.comparar(carro.getEspc())) carrosEncontrados.add(carro);
+		for(Album album:albuns){
+			 if(esp.comparar(album.getEspc())) albunsEncontrados.add(album);
 		}
 		
-		return carrosEncontrados;
+		return albunsEncontrados;
 		
 	}
 	
 	
-	public List<Carro> buscarModelo(String modelo){
-		List<Carro> carrosEncontrados = new LinkedList<Carro>();
-		for(Carro carro:carros) {
-			if(carro.getEspc().getModelo().equals(modelo)) carrosEncontrados.add(carro);
+	public List<Album> buscarNome(String nome){
+		List<Album> albunsEncontrados = new LinkedList<Album>();
+		for(Album album:albuns) {
+			if(album.getEspc().getNome().equals(nome)) albunsEncontrados.add(album);
 		}
-		return carrosEncontrados;
+		return albunsEncontrados;
 	}
 	
-	public List<Carro> getCarros(){
-		return carros;
+	public List<Album> getAlbum(){
+		return albuns;
 	}
 
 }

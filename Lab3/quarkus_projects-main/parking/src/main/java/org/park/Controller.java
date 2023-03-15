@@ -13,7 +13,7 @@ import org.jboss.resteasy.annotations.jaxrs.PathParam;
 
 import com.google.gson.Gson;
 
-@Path("/carro")
+@Path("/album")
 public class Controller {
 
 	
@@ -22,25 +22,17 @@ public class Controller {
 	
 	@GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("{modelo}/{marca}/{cor}/")
-    public Response carro2(@PathParam String modelo, @PathParam String marca, @PathParam String cor) {	
-		List<Carro> carrosEncontrados = model.buscarEspecificacao(new Especificacao(modelo, marca, cor));	
-		String json = new Gson().toJson(carrosEncontrados);
+    @Path("{nome}/{cantor}/{ano}/")
+    public Response album2(@PathParam String nome, @PathParam String cantor, @PathParam String ano) {	
+		List<Album> albunsEncontrados = model.buscarEspecificacao(new Especificacao(nome, cantor, ano));	
+		String json = new Gson().toJson(albunsEncontrados);
     	return Response.status(200).entity(json).build();	
     }
 	
-	@GET
-    @Produces(MediaType.APPLICATION_JSON)
-	@Path("{modelo}")
-    public Response carro1(@PathParam String modelo) {	
-		List<Carro> carrosEncontrados = model.buscarModelo(modelo);	
-		String json = new Gson().toJson(carrosEncontrados);
-    	return Response.status(200).entity(json).build();	
-    }
 	
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasymmmmmmm";
+        return "Hello";
     }
 }

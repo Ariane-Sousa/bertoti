@@ -2,33 +2,31 @@ package org.park;
 
 public class Especificacao {
 
+	private String nome;
+	private String cantor;
+	private String ano;	
 	
-	private String modelo;
-	private String marca;
-	private String cor;
-	
-	
-	public Especificacao(String modelo, String marca, String cor){
-		this.modelo = modelo;
-		this.marca = marca;
-		this.cor = cor;
+	public Especificacao(String nome, String cantor, String ano){
+		this.nome = nome;
+		this.cantor = cantor;
+		this.ano = ano;
 	}
 	
-	public String getModelo(){
-		return modelo;
+	public String getNome(){
+		return nome;
 	}
 	
-	public String getMarca(){
-		return marca;
+	public String getCantor(){
+		return cantor;
 	}
 	
-	public String getCor(){
-		return cor;
+	public String getAno(){
+		return ano;
 	}
 	
-	//delegacao da comparacao de marca, modelo e cor do carro para a classe Especificacao, pois ela eh a dona dos atributos
+	
 	public boolean comparar(Especificacao esp){
-		if(marca.equals(esp.marca) && modelo.equals(esp.modelo) && cor.equals(esp.cor)){
+		if(nome.equals(esp.nome) && cantor.equals(esp.cantor) && ano.equals(esp.ano)){
 			return true;
 		} else {
 			return false;
