@@ -3,112 +3,150 @@
   <head>
     <meta charset="utf-8">
     <title>Album</title>
-	
     
-	<script src="js/jquery.js"></script>
-	
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        padding: 20px;
+      }
 
-	<link href="css/bootstrap.min.css" rel=stylesheet>
-	
-	
-	<script>
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      #painelBusca {
+        margin-bottom: 20px;
+      }
+
+      table {
+        background-color: #fff;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      table th {
+        background-color: #343a40;
+        color: #fff;
+      }
+
+      #dadosAlbum tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Busca de álbuns</h1>
+
+      <div class="row justify-content-center" id="painelBusca">
+        <div class="form-group col-md-4">
+          <label for="nome">Nome</label>
+          <select id="nome" class="form-control">
+            <option value="" selected="selected">Escolha o título do álbum</option>
+            <option value="I Love You">I Love You</option>
+            <option value="#000000 & #FFFFFF">#000000 & #FFFFFF</option>
+            <option value="Wiped Out">Wiped Out</option>
+            <option value="Hard to Imagine">Hard to Imagine</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="cantor">Cantor</label>
+          <select id="cantor" class="form-control">
+            <option value="" selected="selected">Escolha o cantor</option>
+            <option value="The Neighbourhood">The Neighbourhood</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="ano">Ano</label>
+          <select id="ano" class="form-control">
+            <option value="" selected="selected">Escolha o ano</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2018">2018</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <button id="busca" class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="col-auto">
+          <div class="form-group">
+            <input type="text" id="codigo" class="form-control" placeholder="Código do álbum">
+          </div>
+          <button id="buscaPorCodigo" class="btn btn-primary">Buscar por Código</button>
+        </div>
+      </div>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Cantor</th>
+            <th>Ano</th>
+          </tr>
+        </thead>
+        <tbody id="dadosAlbum">
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
 		$(document).ready(function(){
 			
-
 			$("#busca").click(function() {
-
 				var nome = $( "#nome option:selected" ).text();
 				var cantor = $( "#cantor option:selected" ).text();
 				var ano = $( "#ano option:selected" ).text();
-					
+				
 				$("#dadosAlbum").empty();
 					
 				var url = "/album/"+nome+"/"+cantor+"/"+ano+"";
 					
-
 				$.getJSON(url, function(data) {
-						
-						var itens = [];
-						
-						$.each(data, function(i){
-						
-							itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.nome + "</td><td>"+ this.espc.cantor + "</td><td>"+ this.espc.ano + "</td></tr>");
-							
-						});
-									
-						$("#dadosAlbum").append(itens);
-						
+					var itens = [];
+					
+					$.each(data, function(i){
+						itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.nome + "</td><td>"+ this.espc.cantor + "</td><td>"+ this.espc.ano + "</td></tr>");
+					});
+					
+					$("#dadosAlbum").append(itens);
+					
 				});
-
+			});
+			
+			$("#buscaPorCodigo").click(function() {
+				var codigo = $("#codigo").val();
+				
+				$("#dadosAlbum").empty();
+				
+				var url = "/album/"+ "codigo/"+codigo;
+					
+				$.getJSON(url, function(data) {
+					var itens = [];
+					
+					$.each(data, function(i){
+						itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.nome + "</td><td>"+ this.espc.cantor + "</td><td>"+ this.espc.ano + "</td></tr>");
+					});
+					
+					$("#dadosAlbum").append(itens);
+					
+				});
 			});
 
 		});
 
 	</script>
 
-   
-  </head>
-
-
-  <body>
-		
-
-  		<div id="painelBusca">
-            
-		
-		
-            <div class="form-group col-md-4">
-                <label>Nome</label>
-                <select id="nome" class="input-large form-control">
-                    <option value="" selected="selected">Escolha o título do albúm</option>
-                    <option value="I Love You">I Love You</option>
-                    
-                </select>
-            </div>
-		
-		
-		
-            <div class="form-group col-md-4">
-                <label>Cantor</label>
-                <select id="cantor" class="input-large form-control">
-                    <option value="" selected="selected">Escolha o cantor</option>
-                    <option value="The Neighbourhood">The Neighbourhood</option>
-                    
-                </select>
-            </div>
-		
-		
-		
-            <div class="form-group col-md-4">
-                <label>Ano</label>
-                <select id="ano" class="input-large form-control">
-                    <option value="" selected="selected">Escolha o ano</option>
-                    <option value="2013">2013</option>
-                    
-                </select>
-            </div>
-		
-		</div>
-		
-		<button id="busca" class="btn btn-primary col-md-offset-5">Buscar</button>
-		
-		<table class="table table-bordered"> 
-			<caption>Albuns</caption>
-				<thead>
-					<tr> 
-						<th>Codigo</th>
-						<th>Nome</th> 
-						<th>Cantor</th> 
-						<th>Ano</th> 
-					</tr> 
-				</thead> 
-				
-				<tbody id="dadosAlbum"> 
-					
-				</tbody> 
-		</table>
-
-		
   </body>
-  
 </html>
+				

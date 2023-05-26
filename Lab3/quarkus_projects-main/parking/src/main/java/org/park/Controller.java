@@ -29,6 +29,15 @@ public class Controller {
     	return Response.status(200).entity(json).build();	
     }
 	
+	@GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/codigo/{codigo}")
+    public Response album3(@PathParam String codigo) {	
+		List<Album> albunsEncontrados = model.buscarCodigo(codigo);	
+		String json = new Gson().toJson(albunsEncontrados);
+    	return Response.status(200).entity(json).build();	
+    }
+	
 	
     @GET
     @Produces(MediaType.TEXT_PLAIN)
