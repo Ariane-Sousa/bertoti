@@ -7,7 +7,7 @@ public class Locadora {
     private String nomeCD;
     private Date dataLancamento;
     private Desconto desconto;
-    private int preco;
+    private double preco;
 
     public String getNomeCD() {
         return nomeCD;
@@ -17,12 +17,32 @@ public class Locadora {
         this.nomeCD = nomeCD;
     }
 
-    public void setDesconto(Desconto desc) { //Argumento polimorfico!!!! Forma de Voo, forma de Nado e etc
+    public Date getDataLancamento() {
+        return dataLancamento;
+    }
+
+    public void setDataLancamento(Date dataLancamento) {
+        this.dataLancamento = dataLancamento;
+    }
+
+    public Desconto getDesconto() {
+        return desconto;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(int preco) {
+        this.preco = preco;
+    }
+
+    public void setDesconto(Desconto desc) {
         desconto = desc;
     }
 
     public void aplicarDesconto() {
-        desconto.descontar();
+        desconto.descontar(preco);
     }
 
 }
