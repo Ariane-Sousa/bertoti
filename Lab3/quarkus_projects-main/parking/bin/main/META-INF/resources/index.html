@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Album</title>
-	
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
       body {
@@ -39,7 +39,7 @@
 
   <body>
     <div class="container">
-      <h1>Album Search</h1>
+      <h1>Busca de álbuns</h1>
 
       <div class="row justify-content-center" id="painelBusca">
         <div class="form-group col-md-4">
@@ -47,6 +47,9 @@
           <select id="nome" class="form-control">
             <option value="" selected="selected">Escolha o título do álbum</option>
             <option value="I Love You">I Love You</option>
+            <option value="#000000 & #FFFFFF">#000000 & #FFFFFF</option>
+            <option value="Wiped Out">Wiped Out</option>
+            <option value="Hard to Imagine">Hard to Imagine</option>
           </select>
         </div>
 
@@ -63,16 +66,26 @@
           <select id="ano" class="form-control">
             <option value="" selected="selected">Escolha o ano</option>
             <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2018">2018</option>
           </select>
         </div>
       </div>
 
-      <div class="row justify-content-center">
-        <button id="busca" class="btn btn-primary">Buscar</button>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <button id="busca" class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="col-auto">
+          <div class="form-group">
+            <input type="text" id="codigo" class="form-control" placeholder="Código do álbum">
+          </div>
+          <button id="buscaPorCodigo" class="btn btn-primary">Buscar por Código</button>
+        </div>
       </div>
 
       <table class="table table-bordered">
-        <caption>Álbuns</caption>
         <thead>
           <tr>
             <th>Código</th>
@@ -88,28 +101,52 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      $(document).ready(function(){
-        $("#busca").click(function() {
-          var nome = $( "#nome option:selected" ).text();
-          var cantor = $( "#cantor option:selected" ).text();
-          var ano = $( "#ano option:selected" ).text();
-
-         $.getJSON(url, function(data) {
-						
-						var itens = [];
-						
-						$.each(data, function(i){
-						
-							itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.nome + "</td><td>"+ this.espc.cantor + "</td><td>"+ this.espc.ano + "</td></tr>");
-							
-						});
-									
-						$("#dadosAlbum").append(itens);
-						
+		$(document).ready(function(){
+			
+			$("#busca").click(function() {
+				var nome = $( "#nome option:selected" ).text();
+				var cantor = $( "#cantor option:selected" ).text();
+				var ano = $( "#ano option:selected" ).text();
+				
+				$("#dadosAlbum").empty();
+					
+				var url = "/album/"+nome+"/"+cantor+"/"+ano+"";
+					
+				$.getJSON(url, function(data) {
+					var itens = [];
+					
+					$.each(data, function(i){
+						itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.nome + "</td><td>"+ this.espc.cantor + "</td><td>"+ this.espc.ano + "</td></tr>");
+					});
+					
+					$("#dadosAlbum").append(itens);
+					
 				});
-        });
-      });
-    </script>
+			});
+			
+			$("#buscaPorCodigo").click(function() {
+				var codigo = $("#codigo").val();
+				
+				$("#dadosAlbum").empty();
+				
+				var url = "/album/"+ "codigo/"+codigo;
+					
+				$.getJSON(url, function(data) {
+					var itens = [];
+					
+					$.each(data, function(i){
+						itens.push("<tr> <td>"+ this.codigo +"</td><td>"+ this.espc.nome + "</td><td>"+ this.espc.cantor + "</td><td>"+ this.espc.ano + "</td></tr>");
+					});
+					
+					$("#dadosAlbum").append(itens);
+					
+				});
+			});
+
+		});
+
+	</script>
+
   </body>
 </html>
-              
+				
