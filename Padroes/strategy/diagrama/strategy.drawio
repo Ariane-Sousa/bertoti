@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2023-08-22T00:24:35.325Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="rkQgI61Vf5hjc5ZmLl_b" version="21.6.8" type="device">
+  <diagram name="Página-1" id="zI4FPrp43am5sp3HuRfG">
+    <mxGraphModel dx="1368" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.007;entryY=0.691;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=diamondThin;startFill=1;startSize=29;endSize=9;endArrow=open;endFill=0;" edge="1" parent="1" target="41o6ISGUVjwBPMPgYM7_-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="110" as="sourcePoint" />
+            <mxPoint x="396.01" y="126" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="110" />
+              <mxPoint x="340" y="126" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Locadora&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div&gt;&amp;nbsp;- nomeCD: String&lt;/div&gt;&lt;div&gt;&amp;nbsp;- dataLancamento: Date&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- desconto : Desconto&lt;br&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setDesconto(Desconto)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ aplicarDesconto()&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="50" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Desconto&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ descontar()&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-10" value="Desconto2000_2010" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="240" width="140" height="52" as="geometry">
+            <mxRectangle x="425" y="240" width="150" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-11" value="descontar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="41o6ISGUVjwBPMPgYM7_-10">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="180" as="targetPoint" />
+            <mxPoint x="665.5813953488373" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-14" value="Desconto2010_2020" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="240" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-15" value="descontar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="41o6ISGUVjwBPMPgYM7_-14">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="41o6ISGUVjwBPMPgYM7_-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-25" value="DescontoMenor2000" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="240" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-26" value="descontar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="41o6ISGUVjwBPMPgYM7_-25">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="41o6ISGUVjwBPMPgYM7_-30" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.414;exitY=-0.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.436;entryY=0.991;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="41o6ISGUVjwBPMPgYM7_-10" target="41o6ISGUVjwBPMPgYM7_-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="480" y="210" as="sourcePoint" />
+            <mxPoint x="483" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
