@@ -38,10 +38,12 @@ Diante dessa complexidade, nossa proposta visa criar uma plataforma que harmoniz
 <h3 align="center"> Vendedor </h3>
 <p align="center"><img src="https://github.com/Ariane-Sousa/bertoti/assets/108765052/0e703c34-f28e-45df-94eb-c607575095e5" widht="20%"></img>
 
-## Modelo Lógico
+## Modelagem
+
+<h3 align="center">Modelagem Lógico</h3>
 <p align="center"><img src="https://github.com/Ariane-Sousa/bertoti/assets/108765052/a498c64f-808e-421b-8f27-548bb546585f" widht="20%"></img>
 
-## Modelo Relacional
+<h3 align="center">Modelagem Relacional</h3>
 <p align="center"><img src="https://github.com/Ariane-Sousa/bertoti/assets/108765052/492bd35b-be4f-484d-a872-82fbc9e1bfa5" widht="20%"></img>
 
 ## Tecnologias Utilizadas
@@ -52,7 +54,7 @@ Java: linguagem de programação para o desenvolvimento back-end.
 
 PostgreeSQL: utilizado para armazenar e gerenciar dados na aplicação.
 
-Figma: para o desenvolvimento e prototipação das wireframes.
+Figma: utilizado para o desenvolvimento e prototipação das wireframes.
 
 ## Lições Aprendidas
 
@@ -61,16 +63,25 @@ Figma: para o desenvolvimento e prototipação das wireframes.
 <h3>Hard Skills</h3>
 <details>
   <summary><b>Clique para ver a lista de hard skills</b></summary>
-  <p1></p1>
+  
+  <p1>Desenvolvimento Front-end e Back-end: Adquiri habilidades de programação em JavaScript e Java, permitindo-me criar interfaces interativas (front-end) e desenvolver a lógica empresarial (back-end) para sistemas complexos.</p1>
+  
+  <p1>Banco de Dados: Aprendi design de bancos de dados, SQL e gestão de dados ao utilizar o PostgreSQL para armazenamento e manipulação de informações.</p1>
+  
+  <p1>Prototipagem e Design de Interface: Ao trabalhar com o Figma para desenvolvimento e prototipagem, desenvolvi uma compreensão sólida de usabilidade, layout e design centrado no usuário.</p1>
 </details>
 
 <h3>Soft Skills</h3>
 <details>
   <summary><b>Clique para ver a lista de soft skills</b></summary>
-  <p1></p1>
+  
+  <p1>Proatividade: Enfrentar desafios como a padronização de dados demonstrou minha capacidade de propor e implementar soluções, evidenciando uma abordagem proativa para otimizar processos.</p1>
+  
+  <p1>Comunicação Assertiva: Ao explicar claramente problemas, soluções e jornadas do usuário, desenvolvi habilidades de comunicação eficaz, tornando informações técnicas acessíveis a diversos públicos.</p1>
+  
+  <p1>Trabalho em Equipe: A colaboração em projetos acadêmicos evidenciou minha habilidade de trabalhar em equipe, essencial em ambientes profissionais de desenvolvimento de software</p1>
+  
+  <p1>Resolução de Problemas: Enfrentar desafios complexos e criar soluções abrangentes para necessidades empresariais desenvolveu minhas habilidades de resolução de problemas, cruciais para abordar questões técnicas e de negócios.</p1>
 </details>
 
-<br>
-<p align="justify"><b>Proatividade:</b> </p>
-<p align="justify"><b>Comunicação Assertiva:</b></p>
-<br>
+
