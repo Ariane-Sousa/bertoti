@@ -1,0 +1,3 @@
+interface ComponenteArquivo {
+    void imprimir();
+}
