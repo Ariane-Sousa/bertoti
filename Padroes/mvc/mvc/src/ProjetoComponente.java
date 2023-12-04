@@ -1,3 +1,0 @@
-interface ProjetoComponente {
-    void exibir();
-}
