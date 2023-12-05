@@ -1,1 +1,1 @@
-![observer](https://github.com/Ariane-Sousa/bertoti/assets/108765052/e3d73e75-1c3e-40ea-9643-510a9c003f3a)
+![observer](https://github.com/Ariane-Sousa/bertoti/assets/108765052/40c8cf7b-71f1-41a2-ac3e-990b229576a2)
